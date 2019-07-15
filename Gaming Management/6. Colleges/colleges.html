@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Patua+One" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <script src="jquery-ui/jquery-ui/jquery-ui.js" ></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui/jquery-ui.css">
+
+    <title>NOOB FROM INDIA | Colleges</title>
+
+    <style type="text/css">
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url("try1.jpg");
+      width: 100%;
+      
+      background-size: cover;
+
+      height: 100%;
+      opacity: 0.9;
+    }
+
+
+    #container {
+      margin: 35px auto 0 auto;
+      width:1000px;
+      height: 70px;
+    }
+
+
+    .brandquote{
+        color: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 15px;
+        font-family: 'Patua One', cursive;
+        font-size: 50px;
+    }
+
+    #links {
+      width: 700px;
+      position: relative;
+      left: 500px;
+      top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      float: left;
+      font-family: 'Abel', sans-serif;
+      color: rgba(0,0,0,0.7);
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 20px 20px;
+    }
+
+    #logo {
+      color:rgba(0,0,0,0.7);
+      font-family: 'Abel', sans-serif;
+      position: relative;
+      top: 7px;
+    }
+    a:hover{
+        color: rgba(255,255,255,0.7);
+      }
+
+      .college {
+        position: absolute;
+        top:200px;
+        left: 350px;
+        background-color: rgba(0,0,0,0.6);
+        width: 300px;
+        height:300px;
+        background-attachment: cover;
+        border-width:1px;
+        border-radius: 3%/30%;
+      }
+
+      input {
+        position: relative;
+        left: 43px;
+        top: 20px;
+        padding: 2px;
+        outline: none;
+        width: 200px;
+        height:20px;
+        color: rgba(255,255,255,0.6);
+        carot-color:rgba(255,255,255,0.6);
+        background-color: transparent;
+        border: 1px solid rgba(255,255,255,0.6);
+      }
+
+      #collegesubmit {
+        background-color: red;
+        font-size: 20px;
+        padding: 4px;
+        width: 100px;
+        position: absolute;
+        border-radius: 40px;
+        top: 425px;
+        left: 700px;
+        color: rgba(255,255,255,0.9);  
+        border:none;
+      }
+
+      
+</style>
+</head>
+<body>
+
+  <div id="container">
+    <div id="logo">A Website For Gamers</div>
+    <h1 class="brandquote">NOOB FROM INDIA</h1>
+    <div id="links">
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/1.%20Home/home.html">Home</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/2.%20About-Us/about.html">About</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/game.html">Games</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/4.%20Login_Page/login.html">Log In</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/5.%20Signup/signup.html" id="signup">Sign Up</a>
+      <a href="">Colleges</a> 
+  </div>
+
+  <div class="college"><input type="text" name="collegename" placeholder="Enter your college" id="collegename"></div>
+    <div class="college" style="position: absolute;left: 850px;"><input type="text" name="gamename" placeholder="Enter your game" id="gamename"></div>
+    <div class="college" style="display: none; background-color: red;" id="studentname"></div>
+    <div class="college" style="position: absolute;left:850px; display: none;" id="studentname"> </div>
+    <button id="collegesubmit">Click Here!</button>
+  
+    <script type="text/javascript">
+     
+      var availableColleges = [
+        "International Institute of Information Technology",
+        "Pimpri Chinchwad College of Engineering",
+        "Pune Institute of Computer Technology",
+        "AISSMS College of Engineering"
+      ]; 
+      $("#collegename").autocomplete ({
+            source: availableColleges
+        });
+      var availableGames = [
+        "CS Go",
+        "Dota 2",
+        "FIFA 18",
+        "Fortnite"
+      ]; 
+      $("#gamename").autocomplete ({
+            source: availableGames
+      });
+
+      $("#collegesubmit").click(function() {
+        $(this).hide();
+        $("input").hide();
+      });
+
+
+
+      jQuery.ui.autocomplete.prototype._resizeMenu = function () {
+          var ul = this.menu.element;
+          ul.outerWidth(this.element.outerWidth());
+      }
+
+  </script>
+</body>
+</html>

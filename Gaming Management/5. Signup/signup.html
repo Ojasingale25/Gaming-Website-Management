@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NOOB FROM INDIA | Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery.min.js" ></script>
+	<link rel="stylesheet" href="jquery-ui/jquery-ui/jquery-ui.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<form>
+		<p>A Website For Gamers</p>
+		<h3>NOOB FROM INDIA</h3>
+		
+		<label for="firstName">
+			<input type="text" name="firstname" placeholder="First Name" id="firstName">
+		</label>
+		<label for="lastName">
+			<input type="text" name="lastname" placeholder="Last Name" id="lastName">
+		</label>
+
+		<label for="userName">
+			<input type="text" name="userName" placeholder="Username" id="userName">
+		</label>
+		<br>
+		<label for="gmailAccount" id="email">
+			<input type="text" name="gmail" placeholder="abcdefghij">
+			<span>gmail.com</span>
+		</label>
+		<br>
+		<label for="password">
+			<input type="password" name="password" placeholder="Password" id="password">
+		</label>
+
+		<label for="confirmPassword">
+			<input type="confirmPassword" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword">
+		</label>
+
+		<p id="temp">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+		<img src="signin.png" id="signInImage">
+		<a href="#" id="signin">Sign in instead</a>
+		<div id="circle">
+		<input type="submit" name="signUp" value="" id="signUpButton"><div id="signup">Sign Up</div></div>
+	</form>
+
+	</div>
+	<script type="text/javascript">
+		
+		$("#signUpButton").click(function(){
+			$(this).css("background-color","white");
+			$("#circle").css("background-color","black");
+		
+		    $("#password").each(function () {
+			    
+			    var validated =  true;
+		        
+		        if(this.value.length < 8) {
+		            validated = false;
+		            alert("Password is too short.");
+		        } else if(!/\d/.test(this.value)) {
+		            validated = false;
+		            alert("Password should should contain atleast 1 digit.");
+		        } else if(!/[a-z]/.test(this.value)) {
+		            validated = false;
+		            alert("Password should containat at least one lower case.");
+		        } else if(!/[A-Z]/.test(this.value)) {
+		            validated = false;
+		            alert("Password should contain at least one upper case.");
+		        } else if(/[^0-9a-zA-Z]{8,}/.test(this.value)) {
+		            validated = false;
+		            alert("Password should contain at least 8 from the mentioned characters");
+		        }
+	         
+	   		});
+		
+
+		});
+	</script>
+
+
+</body>
+</html>

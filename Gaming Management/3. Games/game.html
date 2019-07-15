@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Patua+One" rel="stylesheet">
+<title>NOOB FROM INDIA | Games</title>
+
+<style type="text/css">
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("try1.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  opacity: 0.9;
+}
+
+
+.containerfifa {
+  position: relative;
+  width: 300px;
+  
+}
+
+.imagefifa {
+  display: block;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 35px;
+  right: 0;
+  height: auto;
+}
+
+.overlayfifa {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 35px;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #324C71;
+}
+
+.containerfifa:hover .overlayfifa {
+  opacity: 1;
+}
+
+.textfifa {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+//dota
+
+.containerdota {
+  position: relative;
+  width: 300px;
+}
+
+.imagedota {
+  display: block;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 450px;
+  right: 0;
+  
+}
+
+.overlaydota {
+  position: relative;
+  top: 50px;
+  bottom: 0;
+  left:100px;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  
+}
+
+.containerdota:hover .overlaydota {
+  opacity: 1;
+}
+
+.textdota {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+//csgo
+
+.containercsgo {
+  position: absolute;
+  width: 300px;
+  float: left;
+}
+
+.imagecsgo {
+  display: block;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 450px;
+  bottom: 0;
+  left: 450px;
+  right: 0;
+}
+
+.overlaycsgo {
+  position: absolute;
+  top: 450px;
+  bottom: 0;
+  left: 450px;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #324C71;
+}
+
+.containercsgo:hover .overlaycsgo {
+  opacity: 1;
+}
+
+.textcsgo {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+//fortnite
+
+.containerfortnite {
+  position: absolute;
+  width: 300px;
+
+}
+
+.imagefortnite {
+  display: block;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 450px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+}
+
+.overlayfortnite {
+  position: absolute;
+  top: 450px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+
+}
+
+.containerfortnite:hover .overlayfortnite {
+  opacity: 1;
+}
+
+.textfortnite {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#imagecontainer {
+  width: 800px;
+  height: 800px;
+  display: inline-block;
+  position: absolute;
+  left: 325px;
+  top:250px;
+}
+
+#container {
+  margin: 35px auto 0 auto;
+  width:1000px;
+  height: 70px;
+}
+
+#logo {
+        color: #DEDED4;
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        position: absolute;
+      }
+
+    .brandquote{
+        color: #DEDED4;
+        position: absolute;
+        top: 15px;
+        font-family: 'Patua One', cursive;
+        font-size: 50px;
+    }
+
+    #links {
+      position: relative;
+      left: 500px;
+      top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      float: left;
+      font-family: 'Abel', sans-serif;
+      color: #DEDED4;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 20px 20px;
+    }
+
+    a:hover{
+        color: #ff6600;
+      }
+
+      #gameslist {
+        position: absolute;
+        top:160px;
+        left:500px;
+        width:500px;
+        height:60px;
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+      }
+
+      #horizontal {
+        position: absolute;
+        top: 400px;
+        left: 50px;
+        border-bottom: 1px solid grey;
+        opacity: 0.6;
+        width: 700px;
+      }
+
+      #vertical {
+        position: absolute;
+        left:400px;
+        top:50px;
+       border-left: 1px solid grey;
+       opacity: 0.6;
+        height: 700px; 
+      }
+</style>
+</head>
+<body>
+
+  <div id="container">
+    <div id="logo">A Website For Gamers</div>
+    <h1 class="brandquote">NOOB FROM INDIA</h1>
+    <div id="links">
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/1.%20Home/home.html">Home</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/2.%20About-Us/about.html">About</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/game.html">Games</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/4.%20Login_Page/login.html">Log In</a>
+      <a href="file:///C:/Users/ingal/Music/Mini%20Project/5.%20Signup/signup.html" id="signup">Sign Up</a>
+      <a href="">Colleges</a> 
+  </div>
+  
+  <img src="gameslist.png" id="gameslist">
+  
+  <div id="imagecontainer">
+    <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/Sub%20Games/FIFA/fifa.html"><div class="containerfifa">
+      <img src="fifa.jpg" alt="Avatar" class="imagefifa">
+      <div class="overlayfifa">
+        <div class="textfifa">FIFA 18 is a football simulation video game in the FIFA series of video games, developed and published by Electronic Arts and was released worldwide on 29 September 2017 for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360, Xbox One and Nintendo Switch.</div>
+      </div>
+    </div></a>  
+    <div id="vertical"></div>
+    <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/Sub%20Games/Dota%202/dota.html"><div class="containerdota">
+      <img src="dota.jpg" alt="Avatar" class="imagedota">
+      <div class="overlaydota">
+        <div class="textdota">Dota 2 is a multiplayer online battle arena video game developed and published by Valve Corporation. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos and its expansion pack, The Frozen Throne.</div>
+      </div>
+    </div>
+  </a>
+  
+    <div id="horizontal"></div>
+    <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/Sub%20Games/Fortnite/fortnite1.html">
+    <div class="containerfortnite">
+      <img src="fortnite.jpg" alt="Avatar" class="imagefortnite">
+      <div class="overlayfortnite">
+        <div class="textfortnite">Fortnite is an online video game first released in 2017 and developed by Epic Games. It is available as separate software packages having different game modes that otherwise share the same general gameplay and game engine.</div>
+      </div>
+    </div>
+    </a>
+
+    <a href="file:///C:/Users/ingal/Music/Mini%20Project/3.%20Games/Sub%20Games/CSGO/csgo.html"><div class="containercsgo">
+      <img src="csgo.jpg" alt="Avatar" class="imagecsgo">
+      <div class="overlaycsgo">
+        <div class="textcsgo">Counter-Strike: Global Offensive is a multiplayer first-person shooter video game developed by Hidden Path Entertainment and Valve Corporation.</div></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
